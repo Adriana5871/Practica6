@@ -1,0 +1,276 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+.logo {
+	background-color: #00B5C9;
+	color: #FFFFFF; 
+	text-align: left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.title-section {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer {
+	background-color: #00B5C9;
+	color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+    height: 800px;
+    background-color: #FFFFFF;
+}
+/*.container > div{
+	width: 400px;
+	height: 750px;
+	shape-margin: 5px;*/
+
+}
+.container > div:nth-child(odd) {
+	/*align-self: flex-end;*/
+}
+/*modulo izquierdo */
+.izq{
+	order: 1;
+	background-color: white;
+}
+/*modulo Derecho */
+.cent {
+	flex-wrap: wrap;
+	order: 3;
+	background-color:white;
+	flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+/*Modulo centro */
+.der{
+	order: 2;
+	background-color: white;
+	padding-left: 30px;
+}
+.izq, .cent, .der{
+	width: 400px;
+	height: 750px;
+	shape-margin: 5px;
+}
+.datosPersonales{
+	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	color:#00B5C9;
+	text-align: center;
+}
+.datosPersonales .iz .iz1{
+	text-align: right;
+	padding-left: 70px;
+	margin-bottom: -10px;
+}
+.datosPersonales .dr .dr1{
+	text-align: left;
+	color: #0E0D0D;
+	padding-right: 100px;
+	margin-bottom: -10px;
+
+}
+.datosPersonales h3{
+   text-align: center;
+}
+.imagen img{
+	width: 400px;
+	height: 390px;
+	align-content: center;
+	display: block;
+	margin: auto;
+	margin-top: 100px; 	
+}
+
+.main-menu{
+	padding-top: 90px;
+}
+.main-menu a {
+	background-color:#00B5C9; 
+	border-radius: 10px;
+    color: #0F0F0F;
+	font-weight: 700;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 6px;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+	justify-content: space-around;
+}
+.tit  h3{
+	text-align: left;
+	color:#00B5C9;
+}
+
+.der .tit2 h3{
+	text-align: left;
+	color:#00B5C9;
+	padding-top: 20px;
+}
+.tit3  h3{
+	text-align: left;
+	color:#00B5C9;
+	padding-top: 130px;
+}
+.barras{
+	flex-wrap: wrap;
+    display: inline-table;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.barras > div {
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+.der .barras .uno{
+	width: 300px;
+	height: 20px;
+	background-color: #CCCCCC;
+	
+}
+.der .barras .dos{
+	background-color: pink;
+
+}
+.cent a i {
+	font-size: 60px;
+	position: initial;
+	top: 700px;
+	padding-left: 60px;
+	color:#00B5C9;
+	margin-right: 10px;
+	text-decoration: none;
+	margin-top: 60px;
+}
+
+.tecnologias {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	list-style: none;
+}
+
+.container-tech {
+	width: 80%;
+	height: 20px;
+	background-color: #00B5C9;
+	margin-bottom: 5px;
+}
+.partial {
+	background-color: pink;
+	height: 100%;
+}
+.container-tech:nth-child(8) .partial {
+  	width: 30%;
+}
+.container-tech:nth-child(2) .partial {
+	width: 70%;
+}
+.container-tech:nth-child(6) .partial {
+	width: 50%;
+}
+.container-tech:nth-child(4) .partial {
+	width: 60%;
+}
+.cent .tecnologias > li{
+position: relative; 
+left: -70px; 
+display: inline; 
+}
+
+.biografi{
+	text-align: justify;
+	background-color:#F2F2F2;
+	margin-top: 20px
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+	flex-wrap: wrap;
+    display: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+    height: 800px;
+    background-color: #FFFFFF;    
+}	
+}
+@media screen and (max-width: 768px) {
+	
+	.container {
+	flex-wrap: wrap;
+    display: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+    height: 800px;
+    background-color: #FFFFFF;
+    
+}
+.izq, .cent, .der{
+	width: 700px;
+	height: 700px;
+	shape-margin: 1px;
+}
+.izq{
+	order: 1;
+	background-color: white;
+}
+/*modulo Derecho */
+.cent {
+	flex-wrap: wrap;
+	order: 3;
+	background-color:white;
+	flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+/*Modulo centro */
+.der{
+	order: 2;
+	background-color: white;
+}
+
+}
+@media screen and (max-width: 480px) {
+	.container {
+	flex-wrap: wrap;
+    display: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+    height: 800px;
+    background-color: #FFFFFF;
+	}
+	.izq, .cent, .der{
+	width: 200px;
+	height: 200px;
+	shape-margin: 5px;
+}
+}
+
+
